@@ -1,31 +1,38 @@
 <script>
-	import BackTopButton from '../atoms/BackTopButton.svelte';
-	import LogoOctopus from '../atoms/LogoOctopus.svelte';
+  import BackTopButton from "$lib/components/atoms/BackTopButton.svelte";
+  import LogoOctopus from "$lib/components/atoms/LogoOctopus.svelte";
 </script>
 
 <footer class="relative mx-auto my-16 mt-16">
-	<div class="right-0 top-3 mb-16 text-center md:top-6 lg:absolute lg:top-0">
-		<BackTopButton />
-	</div>
+  <div class="right-0 top-3 mb-16 text-center md:top-6 lg:absolute lg:top-0">
+    <BackTopButton />
+  </div>
 
-	<div class="lg:flex lg:items-end lg:justify-between">
-		<div>
-			<div class="flex justify-center lg:justify-start">
-				<LogoOctopus
-					class="h-12  w-36 fill-teal-500 stroke-teal-500 transition-colors duration-300 hover:fill-white hover:stroke-teal-400"
-				/>
-			</div>
+  <div class="lg:flex lg:items-end lg:justify-between ">
+    <div>
+      <div class="flex justify-center lg:justify-start ">
+        <LogoOctopus
+          class="h-12  w-36 fill-teal-500 stroke-teal-500 transition-colors duration-300 hover:fill-white hover:stroke-teal-400"
+        />
+      </div>
 
-			<p
-				class="mx-auto mt-9 max-w-md text-center text-sm leading-relaxed text-stone-500 lg:text-left dark:text-stone-400"
-			>
-				Designed on the fly and hand-coded in Visual Studio Code. Built with SvelteKit & Tailwind
-				CSS, deployed with Netlify
-			</p>
-		</div>
+      <p
+        class="mx-auto mt-9 max-w-md text-center text-sm leading-relaxed text-stone-500 lg:text-left dark:text-stone-400"
+      >
+        Designed on the fly and hand-coded in Visual Studio Code. Built with
+        SvelteKit & Tailwind CSS, deployed with Netlify
+      </p>
+    </div>
 
-		<p class="mt-6 text-center text-sm text-stone-500 lg:text-right dark:text-stone-400">
-			Developed & designed by Alina Akseninko © 2025
-		</p>
-	</div>
+    <div
+      class="mt-6 text-center text-sm leading-relaxed text-stone-500 lg:text-right dark:text-stone-400"
+    >
+      <p
+        class=" text-center text-sm leading-relaxed text-stone-500 lg:text-right dark:text-stone-400"
+      >
+      <slot></slot>
+        Developed & designed by Alina Akseninko © 2025
+      </p>
+    </div>
+  </div>
 </footer>

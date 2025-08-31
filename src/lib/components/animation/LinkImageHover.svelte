@@ -21,10 +21,10 @@
 
 <div class="relative z-50 inline">
 	{#if isHover}
-		<img
+		<enhanced:img
 			in:blur={{ duration: 300 }}
 			style="position:absolute;  bottom:40px;  left:50%; transform:translateX(-50%);"
-			src="/images/akseninkoalina.jpg"
+			src="/static/images/akseninkoalina.jpg"
 			alt={hrefDetails.imgAlt}
 			class="z-50 h-24 w-24 rounded-full object-cover shadow-lg"
 		/>

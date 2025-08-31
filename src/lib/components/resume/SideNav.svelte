@@ -33,7 +33,7 @@
 	{#each links as { id, label } (id)}
 		<button
 			onclick={() => scrollToSection(id)}
-			class="flex items-center gap-3 text-left text-stone-400 transition-all duration-200 hover:text-white"
+			class="flex items-center group cursor-pointer gap-3 text-left text-stone-400 transition-all duration-200 hover:text-white"
 			><div
 				class="h-[1px] w-10 bg-stone-600 transition-all"
 				class:w-20={active === id}

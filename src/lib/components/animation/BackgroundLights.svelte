@@ -1,6 +1,6 @@
 <script>
 	import Lights from '$lib/components/animation/Lights.svelte';
-	import BackgroundBoxes from './BackgroundBoxes.svelte';
+	import BackgroundBoxes from '$lib/components/animation/BackgroundBoxes.svelte';
 </script>
 
 <div class="relative h-screen md:bg-stone-950">
@@ -9,16 +9,7 @@
 	>
 		<BackgroundBoxes />
 
-		<!-- <div
-		class="relative z-0 flex h-full w-full justify-center"
-		style="
-			-webkit-mask-image:
-				linear-gradient(to right, #000 1px, transparent 1px),
-				linear-gradient(to bottom, #000 1px, transparent 1px);
-			-webkit-mask-size: 3rem 3rem;
-			background-color: rgb(23 23 23);
-		"
-	></div> -->
+
 
 		<div class="animate-appear absolute bottom-0 left-0 z-0 h-2/3 w-full opacity-0">
 			<Lights />
@@ -39,3 +30,11 @@
 		}
 	}
 </style>
+
+
+
+
+
+
+
+

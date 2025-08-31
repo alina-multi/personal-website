@@ -1,6 +1,10 @@
 <script>
 	import FollowPointerCard from '$lib/components/animation/FollowPointerCard.svelte';
 	export let project;
+
+
+
+
 </script>
 
 <div
@@ -11,6 +15,6 @@
 			class=" inset-shadow-xs inset-shadow-teal-500/20 absolute left-0 top-0 h-full w-full rounded bg-teal-950/20 transition-opacity group-hover:opacity-0 lg:bg-teal-950/70"
 		></div>
 
-		<img src={project.image.src} alt={project.image.alt} class="h-full w-full object-cover" />
+		<enhanced:img src={project.image.src} alt={project.image.alt} class="h-full w-full object-cover" />
 	</FollowPointerCard>
 </div>

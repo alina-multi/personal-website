@@ -12,7 +12,7 @@
 	>
 		<Link class="mr-2 size-5 text-teal-300 lg:size-4" />
 
-		<span class="mx-1 lg:hidden">Download </span>
+		<span class="">Download </span>
 		<span class="">CV</span>
 	</a>
 {:else}

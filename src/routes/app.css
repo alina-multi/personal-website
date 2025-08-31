@@ -1,71 +1,71 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
 @font-face {
-	font-family: 'Gilroy';
-	src: url('/fonts/gilroy-bold-webfont/Gilroy-Light.woff') format('woff');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-bold-webfont/Gilroy-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Gilroy';
-	src: url('/fonts/gilroy-bold-webfont/Gilroy-Regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-bold-webfont/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Gilroy';
-	src: url('/fonts/gilroy-bold-webfont/Gilroy-Medium.woff') format('woff');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-bold-webfont/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Gilroy';
-	src: url('/fonts/gilroy-bold-webfont/Gilroy-Bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-bold-webfont/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Gilroy';
-	src: url('/fonts/gilroy-bold-webfont/Gilroy-Heavy.woff') format('woff');
-	font-weight: 800;
-	font-style: normal;
-	font-display: swap;
+  font-family: "Gilroy";
+  src: url("/fonts/gilroy-bold-webfont/Gilroy-Heavy.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'DrukText Bold Trial';
-	src: url('/fonts/DrukText-Bold-Trial.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+  font-family: "DrukText Bold Trial";
+  src: url("/fonts/DrukText-Bold-Trial.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @theme {
-	--font-accent: 'DrukText Bold Trial', sans-serif;
-	--font-gilroy: 'Gilroy', sans-serif;
+  --font-accent: "DrukText Bold Trial", sans-serif;
+  --font-gilroy: "Gilroy", sans-serif;
 }
 
 @layer base {
-	::selection {
-		@apply bg-white/10 text-teal-400;
-	}
-	body {
-		@apply bg-stone-950 font-sans text-stone-200;
-		font-family: var(--font-gilroy);
-	}
+  ::selection {
+    @apply bg-white/10 text-teal-400;
+  }
+  body {
+    @apply bg-stone-950 font-sans text-stone-200;
+    font-family: var(--font-gilroy);
+  }
 
-	html {
-		scroll-behavior: smooth;
-	}
+  html {
+    scroll-behavior: smooth;
+  }
 }

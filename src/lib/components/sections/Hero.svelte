@@ -46,6 +46,8 @@
 	</div>
 </section>
 
+
+
 <Modal bind:showModal>
 	<div class=" hidden lg:block"><ContactMainContent /></div>
 	<div class=" w-full lg:hidden">
@@ -54,3 +56,4 @@
 		<ContactForm />
 	</div>
 </Modal>
+

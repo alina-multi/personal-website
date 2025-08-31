@@ -17,3 +17,6 @@
 		class="absolute bottom-24 left-0 z-[-1] h-full w-full transition-all duration-500 ease-in-out"
 	></div>
 </div>
+
+
+

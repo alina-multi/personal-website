@@ -10,19 +10,19 @@ const Instagram = `<svg width="24" height="24" fill="currentColor" viewBox="0 0 
 			</svg>`;
 
 export const socialLinks = [
-	{
-		name: 'GitHub',
-		url: 'https://github.com/alina-multi',
-		icon: GitHub
-	},
-	{
-		name: 'LinkedIn',
-		url: 'https://www.linkedin.com/in/alina-akseninko-a3b875aa/',
-		icon: LinkedIn
-	},
-	{
-		name: 'Instagram',
-		url: 'https://www.instagram.com/alina__multi',
-		icon: Instagram
-	}
+  {
+    name: "GitHub",
+    url: "https://github.com/alina-multi",
+    icon: GitHub,
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/alina-akseninko-a3b875aa/",
+    icon: LinkedIn,
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/alina__multi",
+    icon: Instagram,
+  },
 ];

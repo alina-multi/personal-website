@@ -1,8 +1,15 @@
 <script>
+	import arts_center from "../../../../static/images/artscenter.png?enhanced";
+	import blog from "../../../../static/images/blog.png?enhanced";
+	import filmoteka from "../../../../static/images/filmoteka.png?enhanced";
+	import webstudio from "../../../../static/images/webstudio.png?enhanced";
+	import imagefinder from "../../../../static/images/imagefinder.png?enhanced";
+
+
 	const projects = [
 		{
 			title: 'Arts.Center Marketplace',
-			image: '/images/arts.center.png',
+			image: arts_center,
 			description:
 				'An online marketplace for unique artworks and handcrafted pieces from artists and artisans. Built with SvelteKit and Tailwind CSS, featuring secure checkout and responsive design.',
 			liveUrl: 'https://arts.center',
@@ -11,7 +18,7 @@
 		},
 		{
 			title: 'React Blog Platform',
-			image: '/images/blog.png',
+			image: blog,
 			description:
 				'A blogging platform built with React and Firebase that lets users create, edit, and share blog posts seamlessly. Features include user authentication, real-time updates, and a fully responsive design. Developed as an individual training project, the platform supports user profiles, adding posts, commenting, and storing images via Firebase Storage.',
 			liveUrl: 'https://ecotrack.app',
@@ -20,7 +27,7 @@
 		},
 		{
 			title: 'Filmoteka',
-			image: '/images/filmoteka.png',
+			image: filmoteka,
 			description:
 				'A collaborative project that allows users to discover movies and save their favorites in a personalized library',
 			liveUrl: 'https://yourportfolio.com',
@@ -29,7 +36,7 @@
 		},
 		{
 			title: 'Web Studio',
-			image: '/images/webstudio.png',
+			image: webstudio,
 			description:
 				'A web app that lets users search recipes by ingredients, cuisine, and dietary preferences. Integrated with the Spoonacular API and built with Vue.js.',
 			liveUrl: 'https://recipefinder.app',
@@ -38,7 +45,7 @@
 		},
 		{
 			title: 'Image Finder',
-			image: '/images/imagefinder.png',
+			image:imagefinder,
 			description:
 				'Image Finder Web App. An individual educational project that lets users find images instantly by keywords and tags using the Pixabay API. .',
 			liveUrl: 'https://travelplanner.io',
@@ -69,14 +76,14 @@
 				class="hover:inset-shadow-sm inset-shadow-gray-700/20 group rounded-md p-6 transition-transform duration-200 hover:z-50 hover:bg-gray-700/20"
 			>
 				<div
-					class="group relative grid gap-4 pb-1 transition-all duration-200 sm:grid-cols-8 sm:gap-8 md:gap-9"
+					class="group relative grid gap-4 pb-1 transition-all duration-200 sm:grid-cols-3 sm:gap-8 md:gap-9"
 				>
-					<img
+					<enhanced:img
 						src={project.image}
 						alt={project.title}
-						class="aspect-video rounded border-2 border-slate-200/10 object-cover transition sm:col-span-2"
+						class="aspect-video block rounded border-2 border-slate-200/10 object-cover  transition sm:col-span-1"
 					/>
-					<div class="col-span-6">
+					<div class="col-span-2">
 						<h3 class="text-lg font-semibold text-stone-200">{project.title}</h3>
 						<p class="mt-2 text-sm text-stone-400">{project.description}</p>
 						<div class="mt-4 flex items-center gap-2">
