@@ -18,5 +18,5 @@
     : ' hover:scale-105 hover:text-white'} transition-transform"
 >
   <span class="text-teal-300">{`0${index + 1}.`}</span>
-  <span class="ml-2 max-lg:text-stone-200">{label}</span>
+  <span class="ml-2 ">{label}</span>
 </a>
