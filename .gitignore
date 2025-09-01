@@ -10,6 +10,9 @@ node_modules
 /build
 /dist
 
+# VS Code settings
+.vscode/
+
 # OS
 .DS_Store
 Thumbs.db
