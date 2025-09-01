@@ -9,10 +9,13 @@ const config = {
     adapter: adapter({
       pages: "build",
       assets: "build",
-      fallback: undefined, // якщо потрібно SPA fallback, можна "index.html"
       precompress: false,
       strict: true,
+      fallback: "404.html",
     }),
+    prerender: {
+      entries: ["*", "/resume"],
+    },
   },
   extensions: [".svelte", ".svx"],
 };
