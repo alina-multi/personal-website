@@ -6,19 +6,20 @@
   import Projects from "$lib/components/resume/Projects.svelte";
   import SocialLinks from "$lib/components/atoms/SocialLinks.svelte";
   import MouseMoveLayout from "$lib/components/layout/MouseMoveLayout.svelte";
+  import LinkImageHover from "$lib/components/animation/LinkImageHover.svelte";
 </script>
 
 <MouseMoveLayout>
   <div class="  mx-auto min-h-screen max-w-screen-xl px-7">
     <div class="lg:flex lg:justify-between">
       <div
-        class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between py-24"
+        class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between py-24 mt-4"
       >
         <div class="space-y-6">
           <h1
-            class="font-accent whitespace-pre-wrap text-5xl font-semibold text-stone-200 md:text-6xl"
+            class="relative z-50 font-accent w-fit whitespace-pre-wrap text-5xl font-semibold text-stone-200 md:text-6xl"
           >
-            Alina Akseninko
+            <LinkImageHover />
           </h1>
           <h2 class=" font-semibold text-xl">Front End Engineer</h2>
 

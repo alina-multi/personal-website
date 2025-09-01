@@ -12,13 +12,13 @@
 	>
 		<Link class="mr-2 size-5 text-teal-300 lg:size-4" />
 
-		<span class="">Download </span>
+		<span class="lg:hidden max-lg:mr-1">Download </span>
 		<span class="">CV</span>
 	</a>
 {:else}
 	<a
-		href="/Alina_Akseninko_CV.pdf"
-		download="Alina_Akseninko_CV.pdf"
+		href="/CV_Alina_Akseninko.pdf"
+		download="CV_Alina_Akseninko.pdf"
 		class="z-50 flex cursor-pointer items-center rounded-md p-4 font-medium text-stone-400 transition-colors hover:bg-teal-400/10 hover:text-white"
 	>
 		<Link size={20} />

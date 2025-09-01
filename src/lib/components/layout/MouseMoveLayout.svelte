@@ -4,11 +4,11 @@
 	let isTouchDevice = false;
 
 	if (typeof window !== 'undefined') {
-		// isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+		isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 	}
 
 	const handleMouseMove = (e) => {
-		// if (isTouchDevice) return;
+		if (isTouchDevice) return;
 		x = e.clientX;
 		y = e.clientY;
 	};

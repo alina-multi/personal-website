@@ -7,7 +7,7 @@
 	export let data;
 </script>
 
-<div class="flex w-full flex-col-reverse justify-between gap-12 xl:flex-row">
+<div class="flex w-full flex-col-reverse justify-between gap-12 lg:gap-16 xl:flex-row">
 	<div class="w-full text-center lg:w-1/2 xl:hidden">
 		<ResumeLink />
 	</div>

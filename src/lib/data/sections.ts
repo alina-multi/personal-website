@@ -1,5 +1,5 @@
-import arts_center from "../../../static/images/arts_center.jpeg?enhanced";
-import blog_platform from "../../../static/images/blog_platform.jpeg?enhanced";
+import arts_center from "../../images/arts_center.jpeg?enhanced";
+import blog_platform from "../../images/blog_platform.jpeg?enhanced";
 
 const aboutMeIntro = [
   {

@@ -227,7 +227,7 @@
 			<div
 				style="height: {$heightTransform}px; opacity: {$opacityTransform};"
 				class="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-teal-500 from-[0%] via-teal-500 via-[10%] to-transparent"
-			/>
+			> </div>
 		</div>
 	</div>
 </div>
