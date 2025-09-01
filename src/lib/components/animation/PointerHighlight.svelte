@@ -97,7 +97,7 @@
 			<div
 				class={`absolute inset-0 border border-neutral-800 dark:border-neutral-200 ${rectangleClassName}`}
 				style="width: {width}px; height: {height}px; transition: width 1s ease-in-out, height 1s ease-in-out;"
-			/>
+			> </div>
 		</div>
 		<div
 			class="pointer-events-none absolute"
