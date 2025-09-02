@@ -25,6 +25,7 @@
   const canonicalUrl = canonical ? `${seoConfig.siteUrl}${canonical}` : seoConfig.siteUrl;
 
   // JSON-LD structured data
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -52,6 +53,7 @@
     ]
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',

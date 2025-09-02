@@ -14,7 +14,7 @@ const config = {
       fallback: "404.html",
     }),
     prerender: {
-      entries: ["*", "/resume"],
+      entries: ["*", "/resume", "/sitemap.xml"],
     },
   },
   extensions: [".svelte", ".svx"],
