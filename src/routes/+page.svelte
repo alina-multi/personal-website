@@ -8,7 +8,9 @@
   import AboutMe from "$lib/components/sections/AboutMe.svelte";
   import Layout from "$lib/components/layout/Layout.svelte";
   import BackgroundLights from "$lib/components/animation/BackgroundLights.svelte";
+  import SEO from "$lib/components/atoms/SEO.svelte";
   import { sections } from "$lib/data/sections.js";
+  import { pageMetadata } from "$lib/data/seo.js";
 
   const sectionComponents = {
     about: AboutMe,
@@ -19,12 +21,20 @@
   };
 </script>
 
+<SEO 
+  title={pageMetadata.home.title}
+  description={pageMetadata.home.description}
+  keywords={pageMetadata.home.keywords}
+  canonical="/"
+/>
+
 <Layout>
   <BackgroundLights>
     <Hero />
   </BackgroundLights>
 
   <main
+    id="main-content"
     class="xs:px-12 mx-auto mt-16 max-w-4xl space-y-24 px-6 md:px-12 max-lg:container lg:px-20 xl:mt-24 xl:max-w-5xl xl:space-y-44 xl:px-0"
   >
     {#each sections as { id, title, data }, index (id)}
