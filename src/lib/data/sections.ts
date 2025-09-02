@@ -68,7 +68,7 @@ const featured_projects = [
       "Redesigned and rebuilt a social platform with 12k users - turning a slow MVP into a fast, scalable, and user-friendly product, now preparing for marketplace expansion.",
     tags: ["SvelteKit", "TypeScript", "Tailwind CSS", "Storybook", "Prisma"],
 
-    image: { src: arts_center, alt: "Arts.Center screenshot" },
+    image: { src: arts_center, alt: "Arts.Center social platform interface showing artist profiles and artwork gallery built with SvelteKit" },
     url: "https://arts.center",
   },
   {
@@ -77,7 +77,7 @@ const featured_projects = [
       "A blog platform for reading and sharing ideas. Users can create an account to publish articles, comment, and manage their profile with simple navigation and secure authorization.",
 
     tags: ["React.js", "Tailwind CSS", "Firebase/Firestore"],
-    image: { src: blog_platform, alt: "Blog Platform screenshot" },
+    image: { src: blog_platform, alt: "Modern blog platform interface built with React.js showing article list and clean reading experience" },
     url: "https://aesthetic-madeleine-126da3.netlify.app",
   },
 ];

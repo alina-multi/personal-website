@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <!-- Centered version of your exact wave logo for Safari -->
+  <path
+    d="M60 120
+       C60 100, 80 100, 80 120
+       C80 140, 100 140, 100 120
+       C100 70, 140 70, 140 120
+       C140 140, 160 140, 160 120
+       C160 100, 180 100, 180 120"
+    fill="none"
+    stroke="#000"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="110" cy="135" r="6" fill="#000"/>
+  <circle cx="130" cy="135" r="6" fill="#000"/>
+</svg>

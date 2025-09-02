@@ -2,7 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8DEV9K8PJK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8DEV9K8PJK");
+    </script>
+
+    <!-- Google Search Console Verification -->
+    <!-- Replace with your actual verification meta tag from Search Console -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
+
+    <!-- Preload critical fonts for performance -->
     <link
       rel="preload"
       href="/fonts/gilroy-bold-webfont/Gilroy-Regular.woff2"
@@ -18,26 +39,70 @@
       crossorigin
     />
 
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+
+    <!-- Security and performance headers -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Default meta tags (will be overridden by page-specific ones) -->
+    <meta
+      name="description"
+      content="Frontend Engineer specializing in Svelte/SvelteKit, TypeScript, and modern web development. Creating fast, accessible, and user-friendly digital experiences."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Engineer, Svelte Developer, SvelteKit, TypeScript, JavaScript, Web Development, Portfolio"
+    />
+    <meta name="author" content="Alina Akseninko" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicons and app icons -->
+    <link
+      rel="icon"
+      href="%sveltekit.assets%/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%sveltekit.assets%/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="%sveltekit.assets%/favicon-96x96.png"
+    />
+    <link
+      rel="mask-icon"
+      href="%sveltekit.assets%/safari-pinned-tab.svg"
+      color="#0d9488"
+    />
+
+    <!-- Web App Manifest and PWA -->
+    <meta name="apple-mobile-web-app-title" content="Alina Akseninko" />
+    <meta name="application-name" content="Alina Akseninko" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-TileColor" content="#0d9488" />
+    <meta
+      name="msapplication-config"
+      content="%sveltekit.assets%/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#0d9488" />
+    <link rel="manifest" href="%sveltekit.assets%/site.webmanifest" />
+
+    <!-- External scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
       type="module"
     ></script>
 
-    <meta
-      name="description"
-      content="A personal website built with SvelteKit"
-    />
-    <link rel="icon" href="%sveltekit.assets%/favicon.svg" />
-
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="%sveltekit.assets%/favicon.svg"
-    />
-
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="%sveltekit.assets%/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">

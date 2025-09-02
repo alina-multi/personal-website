@@ -35,7 +35,8 @@
 				<button
 					type="button"
 					onclick={() => (showModal = true)}
-					class="z-50 inline-flex cursor-pointer items-center justify-center rounded border border-teal-400/50 bg-stone-950/60 px-4 py-3.5 font-medium text-teal-300 transition-colors hover:bg-teal-400/50 hover:text-stone-200"
+					aria-label="Open contact form to get in touch"
+					class="z-50 inline-flex cursor-pointer items-center justify-center rounded border border-teal-400/50 bg-stone-950/60 px-4 py-3.5 font-medium text-teal-300 transition-colors hover:bg-teal-400/50 hover:text-stone-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-stone-950"
 				>
 					Get in touch
 				</button>

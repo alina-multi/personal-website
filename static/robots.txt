@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://alina-akseninko.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Block access to admin or sensitive areas (adjust as needed)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.well-known/
+Disallow: /node_modules/
+Disallow: /build/
+
+# Allow important pages
+Allow: /
+Allow: /resume
+Allow: /CV_Alina_Akseninko.pdf

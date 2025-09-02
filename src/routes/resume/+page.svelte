@@ -7,7 +7,16 @@
   import SocialLinks from "$lib/components/atoms/SocialLinks.svelte";
   import MouseMoveLayout from "$lib/components/layout/MouseMoveLayout.svelte";
   import LinkImageHover from "$lib/components/animation/LinkImageHover.svelte";
+  import SEO from "$lib/components/atoms/SEO.svelte";
+  import { pageMetadata } from "$lib/data/seo.js";
 </script>
+
+<SEO 
+  title={pageMetadata.resume.title}
+  description={pageMetadata.resume.description}
+  keywords={pageMetadata.resume.keywords}
+  canonical="/resume"
+/>
 
 <MouseMoveLayout>
   <div class="  mx-auto min-h-screen max-w-screen-xl px-7">
@@ -34,7 +43,7 @@
         <SocialLinks />
       </div>
 
-      <div class="lg:mt-24 lg:w-[55%]">
+      <div class="lg:mt-24 lg:w-[55%]" id="main-content">
         <section
           id="about"
           class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-stone-400"

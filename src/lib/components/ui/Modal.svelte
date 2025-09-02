@@ -13,14 +13,23 @@
 			dialog.close();
 		}
 	});
+
+	function handleKeyDown(event) {
+		if (event.key === 'Escape') {
+			dialog.close();
+		}
+	}
 </script>
 
 <dialog
 	bind:this={dialog}
 	onclose={() => (showModal = false)}
+	onkeydown={handleKeyDown}
 	onclick={(e) => {
 		if (e.target === dialog) dialog.close();
 	}}
+	aria-label="Contact form modal"
+	aria-modal="true"
 	class="sm:w-xl lg:w-4xl xl:w-6xl sm:rounded-4xl w-full bg-stone-950/95 px-6 py-12 text-stone-300 backdrop:bg-teal-950/40 backdrop:backdrop-blur-sm
            max-sm:h-screen sm:m-auto
            sm:p-16 sm:pt-36 lg:p-20"
@@ -32,9 +41,9 @@
 		autofocus
 		aria-label="Close modal"
 		onclick={() => dialog.close()}
-		class="absolute right-6 top-6 rounded-full bg-stone-800/50 p-2 text-stone-400 transition-colors hover:bg-stone-800/70 hover:text-stone-200 focus:outline-none focus:ring-0 sm:max-lg:right-16 sm:max-lg:top-12"
+		class="absolute right-6 top-6 rounded-full bg-stone-800/50 p-2 text-stone-400 transition-colors hover:bg-stone-800/70 hover:text-stone-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-stone-950 sm:max-lg:right-16 sm:max-lg:top-12"
 	>
-		<X class="h-5 w-5" />
+		<X class="h-5 w-5" aria-hidden="true" />
 	</button>
 </dialog>
 

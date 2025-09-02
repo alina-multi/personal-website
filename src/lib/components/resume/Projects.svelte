@@ -28,16 +28,26 @@ import {projects} from "$lib/data/resume.js";
 						<h3 class="text-lg font-semibold text-stone-200">{project.title}</h3>
 						<p class="mt-2 text-sm text-stone-400">{project.description}</p>
 						<div class="mt-4 flex items-center gap-2">
-							<a href={project.liveUrl} target="_blank" class="text-sm font-medium hover:underline">
-								View Project</a
+							<a 
+								href={project.liveUrl} 
+								target="_blank" 
+								rel="noopener noreferrer"
+								aria-label={`View ${project.title} project (opens in new tab)`}
+								class="text-sm font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-stone-950"
 							>
+								View Project
+							</a>
 							{#if project.githubUrl}
-								<span class="text-sm text-slate-400">|</span>
+								<span class="text-sm text-slate-400" aria-hidden="true">|</span>
 								<a
 									href={project.githubUrl}
 									target="_blank"
-									class="text-sm font-medium hover:underline">GitHub Repo</a
+									rel="noopener noreferrer"
+									aria-label={`View ${project.title} GitHub repository (opens in new tab)`}
+									class="text-sm font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-stone-950"
 								>
+									GitHub Repo
+								</a>
 							{/if}
 						</div>
 						<ul class="mt-4 flex flex-wrap gap-2">
