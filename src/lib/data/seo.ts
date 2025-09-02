@@ -27,7 +27,7 @@ export const seoConfig = {
     github: "https://github.com/alina-multi" 
   },
   image: {
-    url: "/akseninkoalina.jpg", // Use existing profile image until OG image is created
+    url: "/og-image.jpg",
     alt: "Alina Akseninko - Frontend Engineer",
     width: 1200,
     height: 630
@@ -36,8 +36,8 @@ export const seoConfig = {
 
 export const pageMetadata = {
   home: {
-    title: "Alina Akseninko - Frontend Engineer & Svelte Developer",
-    description: "Frontend Engineer at Arts.Center specializing in Svelte/SvelteKit, TypeScript, and modern web development. Creating fast, pixel-perfect, and intuitive digital experiences.",
+    title: "Alina Akseninko ",
+    description: "Frontend Engineer specializing in Svelte/SvelteKit, TypeScript and modern web development. Creating fast, pixel-perfect, and intuitive digital experiences for the web.",
     keywords: [
       "Alina Akseninko",
       "Frontend Engineer",
