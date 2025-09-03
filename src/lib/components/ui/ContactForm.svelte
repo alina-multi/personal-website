@@ -67,7 +67,7 @@
       }
     } catch (error) {
       notificationMessage =
-        "You can try again or send me a message via social media.";
+        ` You can try again or send me a message via social media. Error: ${error.message}.`;
       notificationType = "error";
     } finally {
       isSubmitting = false;
