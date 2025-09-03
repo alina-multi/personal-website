@@ -17,18 +17,18 @@
       </div>
 
       <p
-        class="mx-auto mt-9 max-w-md text-center text-sm leading-relaxed text-stone-500 lg:text-left dark:text-stone-400"
+        class="mx-auto mt-9 max-w-md text-center text-sm leading-relaxed text-stone-400 lg:text-left "
       >
         Designed on the fly and hand-coded in Visual Studio Code. Built with
-        SvelteKit & Tailwind CSS, deployed with Netlify
+        SvelteKit & Tailwind CSS, deployed with Vercel
       </p>
     </div>
 
     <div
-      class="mt-6 text-center text-sm leading-relaxed text-stone-500 lg:text-right dark:text-stone-400"
+      class="mt-6 text-center text-sm leading-relaxed  lg:text-right text-stone-400"
     >
       <p
-        class=" text-center text-sm leading-relaxed text-stone-500 lg:text-right dark:text-stone-400"
+        class=" text-center text-sm leading-relaxed  lg:text-right text-stone-400"
       >
       <slot></slot>
         Developed & designed by Alina Akseninko © 2025
