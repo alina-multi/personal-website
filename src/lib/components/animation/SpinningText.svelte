@@ -16,7 +16,7 @@
 </script>
 
 <div
-	class="spinning-text {className} {reverse ? 'reverse' : ''}"
+	class="spinning-text  {className} {reverse ? 'reverse' : ''}"
 	style="--duration: {duration}s; {style}"
 >
 	{#each letters as letter, index (index)}
@@ -62,5 +62,6 @@
 		left: 50%;
 		top: 50%;
 		transform-origin: center;
+		
 	}
 </style>

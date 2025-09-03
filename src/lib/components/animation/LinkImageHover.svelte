@@ -22,6 +22,6 @@
     in:blur={{ duration: 300 }}
     src="/static/akseninkoalina.jpg"
     alt="Alina Akseninko - Svelte Developer"
-    class="z-50 absolute -top-0 -right-32 h-32 w-32 rounded object-cover shadow-lg"
+    class="z-50 absolute -top-0 -right-32 h-32 w-32 rounded object-cover shadow-lg max-lg:hidden"
   />
 {/if}

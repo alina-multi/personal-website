@@ -1,4 +1,4 @@
-<div class="mt-4 break-normal text-lg">
+<div class="mt-4 break-normal text-lg text-stone-400 max-lg:mt-12 ">
   Hello! I'm a frontend developer with 3 years of experience crafting fast,
   elegant and intuitive interfaces. I balance visual appeal with functional
   excellence, ensuring every detail serves both user needs and business

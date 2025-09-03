@@ -49,7 +49,8 @@
     sameAs: [
       seoConfig.social.instagram,
       seoConfig.social.linkedin,
-      seoConfig.social.github
+      seoConfig.social.github,
+      seoConfig.social.telegram
     ]
   };
 

@@ -84,7 +84,7 @@
   />
 
   <form
-    class="z-1"
+    class="z-10"
     onsubmit={handleSubmit}
     aria-labelledby="contact-form-title"
     novalidate
