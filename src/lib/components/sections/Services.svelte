@@ -19,9 +19,9 @@
 			class="inset-shadow-sm inset-shadow-gray-700/20 group relative rounded border border-dashed border-zinc-400 bg-gray-700/20 p-9 shadow shadow-gray-700/20 backdrop-blur-3xl transition-all hover:-translate-y-1 hover:bg-teal-950 dark:border-zinc-700"
 		>
 			<div class="">
-				<Icon size={32} color="#ff3e98" strokeWidth={2} class="stroke-teal-500 " />
+				<Icon  color="#ff3e98" strokeWidth={1.5} class="stroke-teal-500 size-10 lg:size-9 " />
 
-				<h3 class="text-shadow-lg font-accent mt-6 text-xl font-normal">{service.title}</h3>
+				<h3 class="text-shadow-lg font-accent mt-6 text-2xl lg:text-xl font-normal">{service.title}</h3>
 				<p class="mt-6 text-stone-400">{service.description}</p>
 			</div>
 		</li>

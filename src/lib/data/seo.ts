@@ -1,6 +1,6 @@
 // SEO configuration for the portfolio website
 export const seoConfig = {
-  siteName: "Alina Akseninko",
+  siteName: "Frontend Engineer",
   siteUrl: "https://alina-akseninko.com",
   defaultTitle: "Alina Akseninko - Frontend Engineer & Svelte Developer",
   defaultDescription:
@@ -26,10 +26,11 @@ export const seoConfig = {
     instagram: "https://www.instagram.com/alina__multi",
     linkedin: "https://www.linkedin.com/in/alina-akseninko-a3b875aa/",
     github: "https://github.com/alina-multi",
+    telegram: "https://t.me/alinamulti",
   },
   image: {
     url: "/og-image.jpg",
-    alt: "Alina Akseninko - Frontend Engineer",
+    alt: "Alina Akseninko - Frontend Engineer/ Frontend Development/ Svelte Developer/ TypeScript Developer/",
     width: 1200,
     height: 630,
   },

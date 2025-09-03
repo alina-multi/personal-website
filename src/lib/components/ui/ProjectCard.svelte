@@ -2,7 +2,6 @@
   import { ExternalLink } from "@lucide/svelte";
   import ProjectImage from "$lib/components/ui/ProjectImage.svelte";
   import ProjectCardHeader from "$lib/components/ui/ProjectCardHeader.svelte";
-  import { ArrowUpRight } from "@lucide/svelte";
 
   export let project;
   export let index;
@@ -15,16 +14,9 @@
     ? ''
     : 'lg:flex-row-reverse'}"
 >
-  <div class="mb-6 flex w-full items-end justify-between lg:hidden">
+  <div class="mb-6 flex w-full  gap-3 lg:hidden">
     <div><ProjectCardHeader title={project.title} url={project.url} /></div>
-    <a
-      href={project.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View {project.title} project"
-    >
-      <ArrowUpRight size={36} class="text-stone-200" />
-    </a>
+
   </div>
   <ProjectImage {project} />
 

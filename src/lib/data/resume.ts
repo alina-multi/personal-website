@@ -15,21 +15,21 @@ export const projects = [
     stack: ["SvelteKit", "Tailwind CSS", "TypeScript", "Storybook", "Prisma"],
   },
   {
-    title: "React Blog Platform",
+    title: "Blogging Platform",
     image: blog,
     description:
-      "A blogging platform built with React and Firebase that lets users create, edit, and share blog posts seamlessly. Features include user authentication, real-time updates, and a fully responsive design. Developed as an individual training project, the platform supports user profiles, adding posts, commenting, and storing images via Firebase Storage.",
-    liveUrl: "https://ecotrack.app",
-    githubUrl: "https://github.com/yourusername/eco-track",
-    stack: ["React.js", "Tailwind CSS", "Firebase", "Netlify"],
+      "Features include user authentication, real-time updates, and a fully responsive design. Developed as an individual training project, the platform supports user profiles, adding posts, commenting, and storing images via Firebase Storage.",
+    liveUrl: "https://aesthetic-madeleine-126da3.netlify.app",
+    githubUrl: "https://github.com/alina-multi/blog-with-firebase",
+    stack: ["React.js", "Tailwind CSS", "Firebase/Firestore", "Netlify"],
   },
   {
     title: "Filmoteka",
     image: filmoteka,
     description:
       "A collaborative project that allows users to discover movies and save their favorites in a personalized library",
-    liveUrl: "https://yourportfolio.com",
-    githubUrl: "https://github.com/yourusername/portfolio",
+    liveUrl: "https://alina-multi.github.io/filmoteka-team/",
+    githubUrl: "https://github.com/alina-multi/filmoteka-team",
     stack: ["JavaScript", "SCSS", "Firebase"],
   },
   {
@@ -37,26 +37,18 @@ export const projects = [
     image: webstudio,
     description:
       "A web app that lets users search recipes by ingredients, cuisine, and dietary preferences. Integrated with the Spoonacular API and built with Vue.js.",
-    liveUrl: "https://recipefinder.app",
-    githubUrl: "https://github.com/yourusername/recipe-finder",
-    stack: [],
+    liveUrl:
+      "https://64f5f1c4a13ee300076c0803--enchanting-sawine-5f8f4d.netlify.app/",
+    githubUrl: "https://github.com/alina-multi/web-studio",
+    stack: ["JavaScript", "HTML5", "CSS3", "Responsive Design"],
   },
   {
     title: "Image Finder",
     image: imagefinder,
     description:
       "Image Finder Web App. An individual educational project that lets users find images instantly by keywords and tags using the Pixabay API. .",
-    liveUrl: "https://travelplanner.io",
-    githubUrl: "https://github.com/yourusername/travel-planner",
-    stack: [
-      "SvelteKit",
-      "Tailwind CSS",
-      "TypeScript",
-      "Storybook",
-      "Vitest",
-      "UX/UI",
-      "SEO",
-      "Quill.js",
-    ],
+    liveUrl: "https://alina-multi.github.io/image-finder/",
+    githubUrl: "https://github.com/alina-multi/image-finder",
+    stack: ["JavaScript", "Tailwind CSS", "Git", "Pixabay API"],
   },
 ];
