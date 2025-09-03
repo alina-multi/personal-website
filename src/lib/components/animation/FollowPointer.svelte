@@ -27,7 +27,7 @@
 	</svg>
 
 	<div
-		class=" inse inset-shadow-sm xl:inset-shadow-stone-700/40 min-w-max whitespace-nowrap rounded-full bg-stone-700/60 px-4 py-2 text-xs text-white backdrop-blur-lg"
+		class="  inset-shadow-sm xl:inset-shadow-stone-700/40 min-w-max whitespace-nowrap rounded-full bg-stone-700/60 px-4 py-2 text-xs text-white backdrop-blur-lg"
 	>
 		{title}
 	</div>
