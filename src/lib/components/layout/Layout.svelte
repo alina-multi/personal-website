@@ -28,7 +28,7 @@
 
   <!-- Права колонка -->
   <aside
-    class="xl:pr-15 fixed bottom-0 right-0 hidden self-end pr-9 leading-5 text-stone-400 lg:flex"
+    class="xl:pr-15 fixed bottom-0 right-0 hidden self-end pr-9 leading-5 text-stone-400 hover:text-teal-300 transition-colors lg:flex"
   >
     <address
       class="font-gilroy flex items-center gap-4 text-lg not-italic [writing-mode:vertical-rl]"
