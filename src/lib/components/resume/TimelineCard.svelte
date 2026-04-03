@@ -50,6 +50,8 @@
 		
               <a
                 href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 class="font-accent flex items-center text-lg hover:text-teal-500 hover:underline"
               >
                 {item.companyName}

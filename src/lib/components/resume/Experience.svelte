@@ -1,7 +1,7 @@
 <script lang="ts">
   import TimelineCard from "$lib/components/resume/TimelineCard.svelte";
 
-  export let timelineData: {
+   interface TimelineItem {
     year: string;
     companyName?: string;
     jobTitle?: string;
@@ -9,11 +9,32 @@
     skills?: string[];
     link?: string;
     projects?: { name: string; link: string }[];
-  }[] = [
+  }
+
+  export let timelineData: TimelineItem[] = [
+      {
+      year: "2025–2026",
+      companyName: "Globant",
+      jobTitle: "Web UI Developer",
+      description:
+        "Built a type-safe UI and features using Svelte 5 and TypeScript on AEM, focusing on scalable architecture and maintainability. Delivered cross-team solutions and created a reusable, multi-brand design system with strong quality and performance.",
+      skills: [
+        "Svelte 5",
+        "Runed",
+        "TypeScript",
+        "Adobe Experience Manager",
+        "Design System",
+        "Headless Pattern",
+        "Scrum"
+    
+      ],
+      link: "https://www.globant.com/",
+      projects: [],
+    },
     {
       year: "2023–2025",
       companyName: "Arts.Center",
-      jobTitle: "UI Engineer",
+      jobTitle: "Frontend Engineer",
       description:
         "Redesigned and rebuilt the frontend of a niche art marketplace. Led UI/UX, performance, accessibility, and SEO improvements. Built key features from scratch.",
       skills: [

@@ -5,7 +5,7 @@
 
 {#if primary}
 	<a
-		href="/CV_Alina_Akseninko.pdf"
+		href="/Front_Dev_Alina_Akseninko.pdf"
 		target="_blank"
 		rel="noopener"
 		aria-label="Download CV (opens in new tab)"
@@ -18,8 +18,8 @@
 	</a>
 {:else}
 	<a
-		href="/CV_Alina_Akseninko.pdf"
-		download="CV_Alina_Akseninko.pdf"
+		href="/Front_Dev_Alina_Akseninko.pdf"
+		download="Front_Dev_Alina_Akseninko.pdf"
 		aria-label="Download CV"
 		class="z-50 flex cursor-pointer items-center rounded-md p-4 font-medium text-stone-400 transition-colors hover:bg-teal-400/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-stone-950"
 	>
