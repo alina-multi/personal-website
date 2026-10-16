@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SpinningText from '$lib/components/animation/SpinningText.svelte';
+	import SpinningText from '#lib/components/animation/SpinningText.svelte';
 	import ContactMainContent from './ContactMainContent.svelte';
 
 	export let title;

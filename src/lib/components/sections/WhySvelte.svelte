@@ -1,6 +1,6 @@
 <script>
-	import SectionList from '$lib/components/ui/SectionList.svelte';
-	import SectionTitle from '$lib/components/atoms/SectionTitle.svelte';
+	import SectionList from '#lib/components/ui/SectionList.svelte';
+	import SectionTitle from '#lib/components/atoms/SectionTitle.svelte';
 	export let title;
 	export let order;
 	export let data;

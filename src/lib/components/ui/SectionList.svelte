@@ -1,5 +1,5 @@
 <script>
-	import GlowingEffect from '$lib/components/animation/GlowingEffect.svelte';
+	import GlowingEffect from '#lib/components/animation/GlowingEffect.svelte';
 	import { FolderTree, Rabbit, Crown, Sticker, PawPrint, Sprout } from '@lucide/svelte';
 
 	const icons = { FolderTree, Rabbit, Crown, Sticker, PawPrint, Sprout };

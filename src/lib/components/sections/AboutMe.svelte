@@ -1,6 +1,6 @@
 <script>
-	import SectionTitle from '$lib/components/atoms/SectionTitle.svelte';
-	import PortraitCard from '$lib/components/atoms/PortraitCard.svelte';
+	import SectionTitle from '#lib/components/atoms/SectionTitle.svelte';
+	import PortraitCard from '#lib/components/atoms/PortraitCard.svelte';
 	import ResumeLink from '../atoms/ResumeLink.svelte';
 	export let title;
 	export let order;

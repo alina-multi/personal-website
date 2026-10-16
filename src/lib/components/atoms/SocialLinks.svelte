@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { socialLinks } from "$lib/data/socialLinks.js";
+  import { socialLinks } from "#lib/data/socialLinks.js";
   import GitHubIcon from "./icons/GitHubIcon.svelte";
   import LinkedInIcon from "./icons/LinkedInIcon.svelte";
   import InstagramIcon from "./icons/InstagramIcon.svelte";

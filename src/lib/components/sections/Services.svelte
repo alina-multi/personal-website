@@ -1,6 +1,6 @@
 <script>
 	import { FolderCode, Gauge, Cpu, Rocket, Zap, Puzzle } from '@lucide/svelte';
-	import SectionTitle from '$lib/components/atoms/SectionTitle.svelte';
+	import SectionTitle from '#lib/components/atoms/SectionTitle.svelte';
 	export let title = 'What can I do for you';
 	export let order = 2;
 	export let data;

@@ -1,6 +1,6 @@
 <script>
   import MouseMoveLayout from "./MouseMoveLayout.svelte";
-  import Header from "$lib/components/layout/top_nav/Header.svelte";
+  import Header from "#lib/components/layout/top_nav/Header.svelte";
 </script>
 
 <div class="relative">

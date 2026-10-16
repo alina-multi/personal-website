@@ -1,5 +1,5 @@
 <script>
-  import { projects } from "$lib/data/resume.js";
+  import { projects } from "#lib/data/resume.js";
   import { ArrowUpRight } from "@lucide/svelte";
 </script>
 

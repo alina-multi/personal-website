@@ -1,16 +1,16 @@
 <script lang="ts">
-  import Footer from "$lib/components/layout/Footer.svelte";
-  import Hero from "$lib/components/sections/Hero.svelte";
-  import Services from "$lib/components/sections/Services.svelte";
-  import FeaturedProjects from "$lib/components/sections/FeaturedProjects.svelte";
-  import WhySvelte from "$lib/components/sections/WhySvelte.svelte";
-  import ContactSection from "$lib/components/sections/ContactSection.svelte";
-  import AboutMe from "$lib/components/sections/AboutMe.svelte";
-  import Layout from "$lib/components/layout/Layout.svelte";
-  import BackgroundLights from "$lib/components/animation/BackgroundLights.svelte";
-  import SEO from "$lib/components/atoms/SEO.svelte";
-  import { sections } from "$lib/data/sections.js";
-  import { pageMetadata } from "$lib/data/seo.js";
+  import Footer from "#lib/components/layout/Footer.svelte";
+  import Hero from "#lib/components/sections/Hero.svelte";
+  import Services from "#lib/components/sections/Services.svelte";
+  import FeaturedProjects from "#lib/components/sections/FeaturedProjects.svelte";
+  import WhySvelte from "#lib/components/sections/WhySvelte.svelte";
+  import ContactSection from "#lib/components/sections/ContactSection.svelte";
+  import AboutMe from "#lib/components/sections/AboutMe.svelte";
+  import Layout from "#lib/components/layout/Layout.svelte";
+  import BackgroundLights from "#lib/components/animation/BackgroundLights.svelte";
+  import SEO from "#lib/components/atoms/SEO.svelte";
+  import { sections } from "#lib/data/sections.js";
+  import { pageMetadata } from "#lib/data/seo.js";
 
   const sectionComponents = {
     about: AboutMe,

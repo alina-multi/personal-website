@@ -1,5 +1,5 @@
 import type { MetaTagsProps } from "svelte-meta-tags";
-import { seoConfig } from "$lib/data/seo.js";
+import { seoConfig } from "#lib/data/seo.js";
 
 export interface SEOData {
   title?: string;

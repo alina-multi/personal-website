@@ -1,7 +1,7 @@
 <script lang="ts">
-	import PointerHighlight from '$lib/components/animation/PointerHighlight.svelte';
-	import SocialLinks from '$lib/components/atoms/SocialLinks.svelte';
-	import ContactForm from '$lib/components/ui/ContactForm.svelte';
+	import PointerHighlight from '#lib/components/animation/PointerHighlight.svelte';
+	import SocialLinks from '#lib/components/atoms/SocialLinks.svelte';
+	import ContactForm from '#lib/components/ui/ContactForm.svelte';
 
 	export let title = 'Get in touch';
 </script>

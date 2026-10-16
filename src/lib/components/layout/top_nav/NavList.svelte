@@ -1,6 +1,6 @@
 <script>
-	import CvLink from '$lib/components/atoms/CvLink.svelte';
-	import NavLink from '$lib/components/layout/top_nav/NavLink.svelte';
+	import CvLink from '#lib/components/atoms/CvLink.svelte';
+	import NavLink from '#lib/components/layout/top_nav/NavLink.svelte';
 	let { links, active } = $props();
 </script>
 

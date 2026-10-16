@@ -1,5 +1,5 @@
 <script>
-    import LinkImageHover from "$lib/components/animation/LinkImageHover.svelte";
+    import LinkImageHover from "#lib/components/animation/LinkImageHover.svelte";
 </script>
 
   <div class="space-y-6">

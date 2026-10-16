@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from "$app/state";
-  import Layout from "$lib/components/layout/Layout.svelte";
+  import Layout from "#lib/components/layout/Layout.svelte";
 </script>
 
 <svelte:head>

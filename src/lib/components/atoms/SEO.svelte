@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { seoConfig } from '$lib/data/seo.js';
+  import { seoConfig } from '#lib/data/seo.js';
   
   interface SEOProps {
     title?: string;

@@ -1,10 +1,10 @@
 <script>
-  import MouseMoveLayout from "$lib/components/layout/MouseMoveLayout.svelte";
-  import Footer from "$lib/components/layout/Footer.svelte";
-  import SEO from "$lib/components/atoms/SEO.svelte";
-  import { pageMetadata } from "$lib/data/seo.js";
-  import StickyProfile from "$lib/components/resume/StickyProfile.svelte";
-  import MainContent from "$lib/components/resume/MainContent.svelte";
+  import MouseMoveLayout from "#lib/components/layout/MouseMoveLayout.svelte";
+  import Footer from "#lib/components/layout/Footer.svelte";
+  import SEO from "#lib/components/atoms/SEO.svelte";
+  import { pageMetadata } from "#lib/data/seo.js";
+  import StickyProfile from "#lib/components/resume/StickyProfile.svelte";
+  import MainContent from "#lib/components/resume/MainContent.svelte";
 </script>
 
 <SEO

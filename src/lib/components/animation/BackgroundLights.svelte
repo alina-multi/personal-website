@@ -1,6 +1,6 @@
 <script>
-	import Lights from '$lib/components/animation/Lights.svelte';
-	import BackgroundBoxes from '$lib/components/animation/BackgroundBoxes.svelte';
+	import Lights from '#lib/components/animation/Lights.svelte';
+	import BackgroundBoxes from '#lib/components/animation/BackgroundBoxes.svelte';
 </script>
 
 <div class="relative h-screen md:bg-stone-950">

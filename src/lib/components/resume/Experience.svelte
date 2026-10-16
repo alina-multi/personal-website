@@ -1,5 +1,5 @@
 <script lang="ts">
-  import TimelineCard from "$lib/components/resume/TimelineCard.svelte";
+  import TimelineCard from "#lib/components/resume/TimelineCard.svelte";
 
    interface TimelineItem {
     year: string;

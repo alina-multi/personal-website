@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Modal from '$lib/components/ui/Modal.svelte';
-	import ContactForm from '$lib/components/ui/ContactForm.svelte';
+	import Modal from '#lib/components/ui/Modal.svelte';
+	import ContactForm from '#lib/components/ui/ContactForm.svelte';
 	import ContactMainContent from './ContactMainContent.svelte';
-	import CvLink from '$lib/components/atoms/CvLink.svelte';
+	import CvLink from '#lib/components/atoms/CvLink.svelte';
 	import LogoOctopus from '../atoms/LogoOctopus.svelte';
 
 	let showModal = $state(false);

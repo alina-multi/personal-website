@@ -1,4 +1,4 @@
-import { seoConfig } from "$lib/data/seo.js";
+import { seoConfig } from "#lib/data/seo.js";
 
 // Static pages in your website
 const staticPages = [
