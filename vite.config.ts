@@ -1,5 +1,11 @@
 // import devtoolsJson from 'vite-plugin-devtools-json';
+import { existsSync } from "node:fs";
 import adapter from "@sveltejs/adapter-static";
+
+const cursorBin = "/Applications/Cursor.app/Contents/Resources/app/bin/cursor";
+if (!process.env.LAUNCH_EDITOR && existsSync(cursorBin)) {
+  process.env.LAUNCH_EDITOR = cursorBin;
+}
 import tailwindcss from "@tailwindcss/vite";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
@@ -12,6 +18,11 @@ export default defineConfig({
     tailwindcss(),
     enhancedImages(), // must come before the SvelteKit plugin
     sveltekit({
+      inspector: {
+        toggleKeyCombo: "alt-x",
+        showToggleButton: "always",
+        toggleButtonPos: "bottom-right",
+      },
       preprocess: [vitePreprocess(), mdsvex()],
       extensions: [".svelte", ".svx"],
       adapter: adapter({
