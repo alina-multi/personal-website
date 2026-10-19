@@ -19,7 +19,7 @@
       <a
         href={link.url}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="external noopener noreferrer"
         class="flex items-center gap-2 p-2 text-stone-400 transition-colors hover:text-teal-300"
         aria-label={link.name}
       >

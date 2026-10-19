@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import { blur } from "svelte/transition";
 
   let isHover = false;
@@ -13,7 +14,7 @@
   };
 </script>
 
-<a use:linkEffect href="/" target="_blank" class="z-50 cursor-pointer">
+<a use:linkEffect href={resolve("/")} target="_blank" class="z-50 cursor-pointer">
   Alina Akseninko
 </a>
 

@@ -1,10 +1,12 @@
 <script>
+	import { resolve } from '$app/paths';
+
 	let className =
 		'w-23 h-12 fill-teal-400 stroke-stone-400 transition-colors duration-300 hover:fill-teal-400 hover:stroke-teal-400 ';
 	export { className as class };
 </script>
 
-<a href="/" class="flex items-center gap-3 {className}">
+<a href={resolve('/')} class="flex items-center gap-3 {className}">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		class={className}

@@ -11,7 +11,10 @@
       <div
         class="group relative sm:grid gap-4 pb-1 transition-all duration-200 sm:grid-cols-3 sm:gap-8 md:gap-9"
       >
-        <a href={project.liveUrl} aria-label={`View ${project.title} project`}
+        <a
+          href={project.liveUrl}
+          rel="external"
+          aria-label={`View ${project.title} project`}
           ><enhanced:img
             src={project.image}
             alt={project.title}
@@ -21,6 +24,7 @@
         <div class="col-span-2 max-sm:mt-6">
           <a
             href={project.liveUrl}
+            rel="external"
             class="text-lg font-semibold text-stone-100 flex gap-1 items-center"
             ><h3 class="text-lg font-semibold ">
               {project.title}
@@ -32,7 +36,7 @@
             <a
               href={project.liveUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="external noopener noreferrer"
               aria-label={`View ${project.title} project (opens in new tab)`}
               class="text-sm font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-stone-950"
             >
@@ -43,7 +47,7 @@
               <a
                 href={project.githubUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="external noopener noreferrer"
                 aria-label={`View ${project.title} GitHub repository (opens in new tab)`}
                 class="text-sm font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-stone-950"
               >
