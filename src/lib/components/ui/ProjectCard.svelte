@@ -1,7 +1,7 @@
 <script>
   import { ExternalLink } from "@lucide/svelte";
-  import ProjectImage from "$lib/components/ui/ProjectImage.svelte";
-  import ProjectCardHeader from "$lib/components/ui/ProjectCardHeader.svelte";
+  import ProjectImage from "#lib/components/ui/ProjectImage.svelte";
+  import ProjectCardHeader from "#lib/components/ui/ProjectCardHeader.svelte";
 
   export let project;
   export let index;

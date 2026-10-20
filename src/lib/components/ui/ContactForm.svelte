@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Notification from "$lib/components/ui/Notification.svelte";
+  import Notification from "#lib/components/ui/Notification.svelte";
 
   let name = $state("");
   let email = $state("");

@@ -1,5 +1,5 @@
 import type { MetaTagsProps } from "svelte-meta-tags";
-import { seoConfig } from "$lib/data/seo.js";
+import { seoConfig } from "#lib/data/seo.js";
 
 export interface SEOData {
   title?: string;
@@ -56,8 +56,6 @@ export function generateSEOTags(data: SEOData = {}): MetaTagsProps {
 
     twitter: {
       card: "summary_large_image",
-      site: seoConfig.social.twitter,
-      creator: seoConfig.social.twitter,
       title,
       description,
       image: `${seoConfig.siteUrl}${image.url}`,
@@ -112,19 +110,27 @@ export function generatePersonSchema() {
     "@type": "Person",
     name: seoConfig.author,
     url: seoConfig.siteUrl,
-    jobTitle: "Frontend Engineer",
-    worksFor: {
-      "@type": "Organization",
-      name: "Arts.Center",
-    },
+    jobTitle: "Frontend Developer",
+    address: [
+      {
+        "@type": "PostalAddress",
+        addressCountry: "Portugal",
+      },
+      {
+        "@type": "PostalAddress",
+        addressCountry: "Ukraine",
+      },
+    ],
     knowsAbout: [
-      "Svelte",
-      "SvelteKit",
       "TypeScript",
-      "JavaScript",
-      "Frontend Development",
-      "Web Development",
+      "Svelte",
+      "Svelte 5",
+      "SvelteKit",
       "React",
+      "Adobe Experience Manager",
+      "AEM Frontend Developer",
+      "Accessibility",
+      "SEO",
       "Tailwind CSS",
     ],
     sameAs: [seoConfig.social.linkedin, seoConfig.social.github],

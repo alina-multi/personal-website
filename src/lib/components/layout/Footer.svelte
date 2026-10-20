@@ -1,6 +1,6 @@
 <script>
-  import BackTopButton from "$lib/components/atoms/BackTopButton.svelte";
-  import LogoOctopus from "$lib/components/atoms/LogoOctopus.svelte";
+  import BackTopButton from "#lib/components/atoms/BackTopButton.svelte";
+  import LogoOctopus from "#lib/components/atoms/LogoOctopus.svelte";
 </script>
 
 <footer class="relative mx-auto my-16 mt-16">

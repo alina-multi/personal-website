@@ -1,6 +1,6 @@
 <script>
-	import CvLink from '$lib/components/atoms/CvLink.svelte';
-	import NavLink from '$lib/components/layout/top_nav/NavLink.svelte';
+	import CvLink from '#lib/components/atoms/CvLink.svelte';
+	import NavLink from '#lib/components/layout/top_nav/NavLink.svelte';
 	let { links, active } = $props();
 </script>
 
@@ -15,6 +15,6 @@
 	{/each}
 
 	<li class="w-full max-lg:mt-6 max-lg:text-center">
-		<CvLink primary={true} />
+		<CvLink variant="primary" />
 	</li>
 </ul>

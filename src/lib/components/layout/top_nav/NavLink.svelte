@@ -1,4 +1,6 @@
 <script>
+  import { resolve } from "$app/paths";
+
   let { id, label, index, active } = $props();
 
   function scrollToSection(id) {
@@ -10,7 +12,7 @@
 </script>
 
 <a
-  href={`/#${id}`}
+  href={resolve(`/#${id}`)}
   onclick={() => scrollToSection(id)}
   aria-current={active === id ? 'page' : undefined}
   aria-label={`Navigate to ${label} section`}

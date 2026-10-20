@@ -1,10 +1,10 @@
 <script>
-  import Timeline from "$lib/components/animation/Timeline.svelte";
-  import Summary from "$lib/components/resume/Summary.svelte";
+  import Timeline from "#lib/components/animation/Timeline.svelte";
+  import Summary from "#lib/components/resume/Summary.svelte";
 
-  import ProjectList from "$lib/components/resume/ProjectList.svelte";
+  import ProjectList from "#lib/components/resume/ProjectList.svelte";
   import Experience from "./Experience.svelte";
-  import Title from "$lib/components/resume/Title.svelte";
+  import Title from "#lib/components/resume/Title.svelte";
 </script>
 
 <div

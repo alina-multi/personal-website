@@ -1,9 +1,9 @@
 <script>
   import { onMount } from "svelte";
-  import LogoOctopus from "$lib/components/atoms/LogoOctopus.svelte";
-  import MobileMenu from "$lib/components/layout/top_nav/MobileMenu.svelte";
-  import NavList from "$lib/components/layout/top_nav/NavList.svelte";
-  import MobileMenuButton from "$lib/components/layout/top_nav/MobileMenuButton.svelte";
+  import LogoOctopus from "#lib/components/atoms/LogoOctopus.svelte";
+  import MobileMenu from "#lib/components/layout/top_nav/MobileMenu.svelte";
+  import NavList from "#lib/components/layout/top_nav/NavList.svelte";
+  import MobileMenuButton from "#lib/components/layout/top_nav/MobileMenuButton.svelte";
 
   let active = $state("home");
 

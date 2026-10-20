@@ -1,5 +1,5 @@
 <script>
-  import FollowPointerCard from "$lib/components/animation/FollowPointerCard.svelte";
+  import FollowPointerCard from "#lib/components/animation/FollowPointerCard.svelte";
 </script>
 
 <div

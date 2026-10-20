@@ -1,7 +1,7 @@
 <script>
-  import SideNav from "$lib/components/resume/SideNav.svelte";
-  import SocialLinks from "$lib/components/atoms/SocialLinks.svelte";
-  import ProfileHeader from "$lib/components/resume/ProfileHeader.svelte";
+  import SideNav from "#lib/components/resume/SideNav.svelte";
+  import SocialLinks from "#lib/components/atoms/SocialLinks.svelte";
+  import ProfileHeader from "#lib/components/resume/ProfileHeader.svelte";
 </script>
 
 <div

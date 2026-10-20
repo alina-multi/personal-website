@@ -1,7 +1,9 @@
-test-results
+# Dependencies
 node_modules
+package-lock.json
+yarn.lock
 
-# Output
+# Build / deploy output
 .output
 .vercel
 .netlify
@@ -10,8 +12,19 @@ node_modules
 /build
 /dist
 
-# VS Code settings
+# Tests
+test-results
+playwright-report
+blob-report
+coverage
+
+# Logs & local debug
+*.log
+.cursor/
+
+# IDE 
 .vscode/
+.idea/
 
 # OS
 .DS_Store
@@ -26,4 +39,3 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-

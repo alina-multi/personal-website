@@ -19,7 +19,7 @@
       </div>
 
       <h3
-        class="hidden text-xl font-semibold text-stone-400 md:block md:pl-20 md:text-base"
+        class="hidden text-xl font-semibold text-stone-400 md:block md:pl-20 md:text-base min-w-42"
       >
         {item.year}
       </h3>
@@ -32,22 +32,21 @@
         {item.year}
       </h3>
 
-      <div class=" ">
-        <div class="">
+      <div>
+        <div>
           <div
             class="mb-3 flex items-center gap-3 text-base font-medium text-white group-hover:text-teal-500"
           >
             <h4 class="font-accent text-lg">
               {item.jobTitle}
             </h4>
-			{#if item.link || item.companyName}
+            {#if item.link || item.companyName}
               <div
                 class="h-0.5 w-0.5 rounded-full bg-white group-hover:bg-teal-500"
               ></div>
             {/if}
 
             {#if item.link}
-		
               <a
                 href={item.link}
                 target="_blank"
@@ -55,7 +54,7 @@
                 class="font-accent flex items-center text-lg hover:text-teal-500 hover:underline"
               >
                 {item.companyName}
-             <ArrowUpRight class="size-5 stroke-1" />
+                <ArrowUpRight class="size-5 stroke-1" />
               </a>
             {:else}
               <span
@@ -64,14 +63,18 @@
               >
             {/if}
           </div>
-
-          <p class="text-stone-400 group-hover:text-stone-300">
-            {#if typeof item.description === "string"}
-              {item.description}
-            {:else}
-              <svelte:component this={item.description} />
-            {/if}
-          </p>
+          <div class="space-y-3 ">
+          {#each item.description as paragraph (paragraph.text)}
+            <p class=" text-stone-400 ">
+              {#if paragraph.subtitle}
+                <span class="font-medium text-stone-300"
+                  >{paragraph.subtitle} •
+                </span> 
+              {/if}
+              <span class="group-hover:text-stone-300">{paragraph.text}</span>
+            </p>
+          {/each}
+          </div>
         </div>
 
         <ul
@@ -83,6 +86,8 @@
 
               <a
                 href={project.link}
+                target="_blank"
+                rel="external noopener noreferrer"
                 class="hover:text-teal-500 hover:underline"
               >
                 {project.name}
