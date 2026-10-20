@@ -9,7 +9,7 @@ const aboutMeIntro = [
     p2: "I started out with React but found my perfect match in Svelte and SvelteKit. Along the way, I’ve also picked up experience in branding, content creation, and SEO, which helps me understand how design, usability, and visibility all fit together to make a product succeed.",
   },
   {
-    p3: "Currently, I’m a Frontend Engineer at Arts.Center, focusing on product development and UX-centric solutions that connect artists with audiences through unique digital experiences.",
+    p3: "I’m currently working as a contractor and looking for the next role. I’m open to contract work and to a full-time position on a product team.",
   },
   { p4: "Here are a few technologies I’ve been working with recently:" },
 ];
@@ -19,8 +19,8 @@ const techStack = [
   "JavaScript (ES6+)",
   "Svelte/SvelteKit",
   "Tailwind CSS",
-  "React.js",
-  "Prisma",
+  "React",
+  "AEM",
 ];
 const services = [
   {
@@ -63,14 +63,14 @@ const services = [
 
 const featured_projects = [
   {
-    title: "Arts.Center",
+    title: "Arts Center",
     description:
-      "Redesigned and rebuilt a social platform with 12k users - turning a slow MVP into a fast, scalable, and user-friendly product, now preparing for marketplace expansion.",
-    tags: ["SvelteKit", "TypeScript", "Tailwind CSS", "Storybook", "Prisma"],
+      "Rebuilt a niche art gallery into a multilingual SvelteKit and TypeScript platform with over 300k artworks and 12k users. Led the frontend architecture and UI, and reached 90+ Lighthouse scores.",
+    tags: ["SvelteKit", "TypeScript", "Tailwind CSS", "Storybook", "Vitest"],
 
     image: {
       src: arts_center,
-      alt: "Arts.Center social platform interface showing artist profiles and artwork gallery built with SvelteKit",
+      alt: "Arts.Center social platform interface showing artist profiles and artwork gallery built with SvelteKit and TypeScript",
     },
     url: "https://arts.center",
   },

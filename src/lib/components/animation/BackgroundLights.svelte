@@ -9,8 +9,6 @@
 	>
 		<BackgroundBoxes />
 
-
-
 		<div class="animate-appear absolute bottom-0 left-0 z-0 h-2/3 w-full opacity-0">
 			<Lights />
 		</div>
@@ -30,11 +28,3 @@
 		}
 	}
 </style>
-
-
-
-
-
-
-
-

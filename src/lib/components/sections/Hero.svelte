@@ -41,7 +41,7 @@
 					Get in touch
 				</button>
 
-				<CvLink />
+				<CvLink variant="button" />
 			</nav>
 		</article>
 	</div>

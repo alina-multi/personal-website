@@ -1,10 +1,13 @@
 <script lang="ts">
+  import { resolve } from "$app/paths";
   import { page } from "$app/state";
   import Layout from "#lib/components/layout/Layout.svelte";
 </script>
 
 <svelte:head>
-  <title>{page.status} — Page Not Found</title>
+  <title>{page.status} | Alina Akseninko</title>
+  <meta name="description" content="This page could not be found." />
+  <meta name="robots" content="noindex, nofollow" />
 </svelte:head>
 
 <Layout>
@@ -22,7 +25,7 @@
         Oops! {page.error?.message}
       </p>
       <a
-        href="/"
+        href={resolve("/")}
         class="mt-12 px-9 py-4 border border-teal-300 font-semibold text-base lg:text-lg text-stone-200 rounded hover:bg-teal-600/50 transition"
       >
         Go Home

@@ -15,6 +15,6 @@
 	{/each}
 
 	<li class="w-full max-lg:mt-6 max-lg:text-center">
-		<CvLink primary={true} />
+		<CvLink variant="primary" />
 	</li>
 </ul>

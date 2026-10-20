@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Dark-only site */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
@@ -67,5 +70,6 @@
 
   html {
     scroll-behavior: smooth;
+    color-scheme: dark;
   }
 }

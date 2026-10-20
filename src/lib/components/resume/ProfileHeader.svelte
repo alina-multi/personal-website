@@ -8,7 +8,7 @@
     >
       <LinkImageHover />
     </h1>
-    <h2 class="font-medium text-2xl font-accent text-stone-300">Front End Engineer</h2>
+    <h2 class="font-medium text-2xl font-accent text-stone-300">Frontend Engineer</h2>
 
     <p class=" text-stone-400 text-lg md:max-w-sm">
       I build high-performance, maintainable web applications with clean code

@@ -1,16 +1,18 @@
 import { seoConfig } from "#lib/data/seo.js";
 
 // Static pages in your website
+const lastModified = "2026-10-16";
+
 const staticPages = [
   {
     url: "",
-    lastModified: new Date().toISOString(),
+    lastModified,
     changeFrequency: "monthly",
     priority: 1.0,
   },
   {
     url: "/resume",
-    lastModified: new Date().toISOString(),
+    lastModified,
     changeFrequency: "monthly",
     priority: 0.8,
   },

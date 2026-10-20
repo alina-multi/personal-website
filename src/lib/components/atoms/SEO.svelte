@@ -19,42 +19,42 @@
     noindex = false
   }: SEOProps = $props();
 
-  const fullTitle = title === seoConfig.defaultTitle ? title : `${title} | ${seoConfig.siteName}`;
-  const keywordsString = keywords.join(', ');
-  const imageUrl = `${seoConfig.siteUrl}${image}`;
-  const canonicalUrl = canonical ? `${seoConfig.siteUrl}${canonical}` : seoConfig.siteUrl;
+  const keywordsString = $derived(keywords.join(', '));
+  const imageUrl = $derived(`${seoConfig.siteUrl}${image}`);
+  const canonicalUrl = $derived(
+    canonical ? `${seoConfig.siteUrl}${canonical}` : seoConfig.siteUrl
+  );
 
-  // JSON-LD structured data
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: seoConfig.author,
     url: seoConfig.siteUrl,
-    jobTitle: 'Frontend Engineer',
-    worksFor: {
-      '@type': 'Organization',
-      name: 'Arts.Center'
-    },
-    knowsAbout: [
-      'Svelte',
-      'SvelteKit', 
-      'TypeScript',
-      'JavaScript',
-      'Frontend Development',
-      'Web Development',
-      'React',
-      'Tailwind CSS'
+    jobTitle: 'Frontend Developer',
+    address: [
+      {
+        '@type': 'PostalAddress',
+        addressCountry: 'Portugal'
+      },
+      {
+        '@type': 'PostalAddress',
+        addressCountry: 'Ukraine'
+      }
     ],
-    sameAs: [
-      seoConfig.social.instagram,
-      seoConfig.social.linkedin,
-      seoConfig.social.github,
-      seoConfig.social.telegram
-    ]
+    knowsAbout: [
+      'TypeScript',
+      'Svelte',
+      'Svelte 5',
+      'SvelteKit',
+      'React',
+      'Adobe Experience Manager',
+      'AEM Frontend Developer',
+      'Accessibility',
+      'SEO'
+    ],
+    sameAs: [seoConfig.social.linkedin, seoConfig.social.github]
   };
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -67,12 +67,15 @@
     },
     inLanguage: 'en-US'
   };
+
+  const personJsonLd = JSON.stringify(personSchema).replace(/</g, '\\u003c');
+  const websiteJsonLd = JSON.stringify(websiteSchema).replace(/</g, '\\u003c');
 </script>
 
 <svelte:head>
   <!-- Primary Meta Tags -->
-  <title>{fullTitle}</title>
-  <meta name="title" content={fullTitle} />
+  <title>{title}</title>
+  <meta name="title" content={title} />
   <meta name="description" content={description} />
   <meta name="keywords" content={keywordsString} />
   <meta name="author" content={seoConfig.author} />
@@ -86,7 +89,7 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalUrl} />
-  <meta property="og:title" content={fullTitle} />
+  <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={imageUrl} />
   <meta property="og:image:alt" content={seoConfig.image.alt} />
@@ -97,12 +100,12 @@
 
   <!-- General Social Media (works for Instagram, LinkedIn, etc.) -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content={fullTitle} />
+  <meta property="twitter:title" content={title} />
   <meta property="twitter:description" content={description} />
   <meta property="twitter:image" content={imageUrl} />
   <meta property="twitter:image:alt" content={seoConfig.image.alt} />
 
   <!-- Structured Data -->
-  <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
-  <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
+  {@html `<script type="application/ld+json">${personJsonLd}</script>`}
+  {@html `<script type="application/ld+json">${websiteJsonLd}</script>`}
 </svelte:head>

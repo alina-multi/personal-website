@@ -1,5 +1,5 @@
 <div class="mt-4 break-normal text-lg text-stone-400 max-lg:mt-12 ">
-  Hello! I'm a frontend developer with 3 years of experience crafting fast,
+  Hello! I'm a frontend developer with 4 years of experience crafting fast,
   elegant and intuitive interfaces. I balance visual appeal with functional
   excellence, ensuring every detail serves both user needs and business
   objectives.
@@ -20,9 +20,8 @@
   </div>
   <br />
 
-  I approach development as problem-solving — creating digital experiences that
-  people genuinely enjoy using. Currently, I'm enhancing the Arts.Center
-  marketplace, developing a seamless experience for artists and buyers.
+  I approach development as problem-solving, with a close eye on design and the
+  business outcome.
   <br />
   <br />
 

@@ -4,6 +4,8 @@
   import LinkedInIcon from "./icons/LinkedInIcon.svelte";
   import InstagramIcon from "./icons/InstagramIcon.svelte";
   import TelegramIcon from "./icons/TelegramIcon.svelte";
+  import CvLink from "./CvLink.svelte";
+
 
   const iconComponents = {
     GitHub: GitHubIcon,
@@ -11,9 +13,10 @@
     Instagram: InstagramIcon,
     Telegram: TelegramIcon,
   };
+
 </script>
 
-<ul class="-ml-1 mt-8 flex items-center">
+<ul class="-ml-1 mt-8 flex items-center ">
   {#each socialLinks as link (link.url)}
     <li>
       <a
@@ -27,4 +30,7 @@
       </a>
     </li>
   {/each}
+  <li>
+    <CvLink variant="icon" />
+  </li>
 </ul>
