@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Download } from '@lucide/svelte';
 	import { asset } from '$app/paths';
+	import { trackCvDownload } from '#lib/utils/analytics.js';
 
 	const cvHref = asset('Front_Dev_Alina_Akseninko_2026.pdf');
 
@@ -23,6 +24,10 @@
 
 	const className = $derived(`${variantClassName[variant]}`);
 
+	const placement = $derived(
+		variant === 'primary' ? 'header' : variant === 'icon' ? 'social' : 'hero'
+	);
+
 	const cvLink = {
 		href: cvHref,
 		target: '_blank',
@@ -31,7 +36,7 @@
 	} as const;
 </script>
 
-<a {...cvLink} class={className}>
+<a {...cvLink} class={className} onclick={() => trackCvDownload(placement)}>
 	{#if variant === 'primary'}
 		<Download class="mr-2 size-5 text-teal-300 lg:size-4" aria-hidden="true" />
 		<span class="lg:hidden max-lg:mr-1">Download </span>

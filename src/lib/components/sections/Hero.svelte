@@ -50,11 +50,13 @@
 
 
 <Modal bind:showModal>
-	<div class=" hidden lg:block"><ContactMainContent /></div>
+	<div class=" hidden lg:block">
+		<ContactMainContent placement="hero_modal" open={showModal} idPrefix="hero-desktop" />
+	</div>
 	<div class=" w-full lg:hidden">
 		<div class="absolute left-6 top-6 sm:left-16 sm:top-12"><LogoOctopus /></div>
 		<h1 class="font-accent pb-9 text-3xl font-bold">Contact Me</h1>
-		<ContactForm />
+		<ContactForm placement="hero_modal" open={showModal} idPrefix="hero-mobile" />
 	</div>
 </Modal>
 
