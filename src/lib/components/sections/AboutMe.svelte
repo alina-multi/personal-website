@@ -9,7 +9,7 @@
 
 <div class="flex w-full flex-col-reverse justify-between gap-12 lg:gap-16 xl:flex-row">
 	<div class="w-full text-center lg:w-1/2 xl:hidden">
-		<ResumeLink />
+		<ResumeLink placement="about_mobile" />
 	</div>
 	<PortraitCard />
 
@@ -38,7 +38,7 @@
 				{/each}
 			</ul>
 			<div class="mt-12 hidden lg:justify-start xl:flex">
-				<ResumeLink />
+				<ResumeLink placement="about_desktop" />
 			</div>
 		</div>
 	</div>

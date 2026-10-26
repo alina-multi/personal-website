@@ -4,6 +4,9 @@
 	import ContactForm from '#lib/components/ui/ContactForm.svelte';
 
 	export let title = 'Get in touch';
+	export let placement: 'contact_section' | 'hero_modal' = 'contact_section';
+	export let open = true;
+	export let idPrefix = 'contact';
 </script>
 
 <div class="grid gap-16 lg:grid-cols-2 lg:gap-24">
@@ -26,5 +29,5 @@
 		</div>
 	</div>
 
-	<ContactForm />
+	<ContactForm {placement} {open} {idPrefix} />
 </div>
